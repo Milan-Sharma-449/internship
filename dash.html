@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    
+body {
+  background-image: linear-gradient(#58687E,#39495E);
+  height: 100vh;
+  color: #FFFFFF;
+}
+main {
+    border-radius: 10px;
+    background-color: #273D49CC;
+}
+h2 {
+    top: 100px;
+    left: 30px;
+    width: 141px;
+    height: 31px;
+    text-align: left;
+    font: normal normal normal 28px/32px Ubuntu;
+    letter-spacing: 0px;
+    color: hsla(0, 0%, 100%, 1);
+    opacity: 1;
+    font-size: 28px;
+}
+.container {
+  top: 8px;
+  left: 0px;
+  position: relative;
+  text-align: center;
+  color: white;
+  x: 842.64px;
+  y: 21.61px;
+}
+.topleft {
+  position: absolute;
+  top: 8px;
+  left: 0px;
+  width: 259px;
+  height: 52px;
+  x: 30px;
+  y: 16px;
+}
+.topright {
+  position: absolute;
+  top: 172px;
+  right: 18px;
+  font-size: 18px;
+}
+
+.button { 
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    height: 45px;
+    width: 99px;
+    float: right;
+    background-color: hsla(201, 30%, 22%, 0.8);
+    text-align: center;
+    top: 201px;
+    left: 1168px;
+    font-family: normal normal normal 20px/24px Ubuntu;
+    color: #97A1A9;
+    letter-spacing: 0px;
+    opacity: 1;
+    border color: hsla(207, 9%, 63%, 1);
+}
+.button1 {border-radius: 10px;}
+.button2 {border-radius: 10px;}
+.button3 {border-radius: 10px;}
+
+form.search input[type=text] {
+    background: #283A46;
+    margin-top: 20px;
+    color: #283A46;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid grey;
+    float: right;
+    width: 250px;
+    height: 25px;
+    border-radius: 10px;
+}
+
+
+table {
+  font-size: 18px;
+  border-collapse: collapse;
+  background-color: #273D49CC;
+  font-family: normal normal normal 20px/24px Ubuntu;
+  letter-spacing: 0px;
+  width: 100%;
+  opacity: 1;
+}
+
+td, th {
+  color: #97A1A9;    
+  text-align: left;
+  padding: 8px;
+}
+tr:nth-child(even) {
+  background-color: #283A46;
+}
+    </style>
+</head>
+
+
+    <body>
+        <div class="container">
+            <img src="C:\Users\Milan\Downloads\logo.png" alt="Highradius" >
+            <div class="topleft"><img src="C:\Users\Milan\Downloads\abc.png"></div>
+        </div>
+        <h2> Invoice List</h2>
+    
+        <div>
+            <main>
+                <form class="search" action="/action_page.php">
+                    <div class="topright"><img src="C:\Users\Milan\Downloads\Symbol.png" height="25px" width="25px" ></div>
+                    <input type="text" placeholder="Search by Invoice Number">
+                </form>
+                <button class="button button3">- Delete</button>
+                <button class="button button2"><img src="C:\Users\Milan\Downloads\pen.jpeg" height="15px" width="15px"> Edit</button>
+                <button class="button button1">+ Add</button>
+                
+                <div class="modal fade" id="myModal" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">Modal Header</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p>Some text in the modal.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+      
+                    </div>
+                </div>
+                <table>
+                    <tr>
+                        <th>
+                            <label class="container">
+                            <input type="checkbox" default="checked">
+                            <span class="checkmark"></span>
+                            </label>
+                        </th>
+                        <th>Customer Name</th>
+                        <th>Customer #</th>
+                        <th>Invoice #</th>
+                        <th>Invoice Amount</th>
+                        <th>Due Date</th>
+                        <th>Predicted Payment Date</th>
+                        <th>Notes</th>
+                    </tr>
+                    
+                    <tr>
+                            <td><input type = "checkbox" class = "chkbox"/></td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                        </tr>
+                        <tr>
+                            <td><input type = "checkbox" class = "chkbox"/></td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                        </tr>
+                        <tr>
+                            <td><input type = "checkbox" class = "chkbox"/></td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                        </tr>
+                        <tr>
+                            <td><input type = "checkbox" class = "chkbox"/></td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                        </tr>
+                        <tr>
+                            <td><input type = "checkbox" class = "chkbox"/></td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                        </tr>
+                        <tr>
+                            <td><input type = "checkbox" class = "chkbox"/></td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                        </tr>
+                        <tr>
+                            <td><input type = "checkbox" class = "chkbox"/></td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                        </tr>
+                        <tr>
+                            <td><input type = "checkbox" class = "chkbox"/></td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                        </tr>
+                        <tr>
+                            <td><input type = "checkbox" class = "chkbox"/></td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                        </tr>
+                        <tr>
+                            <td><input type = "checkbox" class = "chkbox"/></td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                        </tr>
+                        <tr>
+                            <td><input type = "checkbox" class = "chkbox"/></td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                        </tr>
+                        <tr>
+                            <td><input type = "checkbox" class = "chkbox"/></td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                        </tr>
+                        <tr>
+                            <td><input type = "checkbox" class = "chkbox"/></td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                        </tr>
+                        <tr>
+                            <td><input type = "checkbox" class = "chkbox"/></td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                        </tr>
+                        <tr>
+                            <td><input type = "checkbox" class = "chkbox"/></td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                        </tr>
+                        <tr>
+                            <td><input type = "checkbox" class = "chkbox"/></td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                        </tr>
+                        <tr>
+                            <td><input type = "checkbox" class = "chkbox"/></td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                        </tr>
+                        <tr>
+                            <td><input type = "checkbox" class = "chkbox"/></td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                        </tr>
+                        <tr>
+                            <td><input type = "checkbox" class = "chkbox"/></td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                        </tr>
+                        <tr>
+                            <td><input type = "checkbox" class = "chkbox"/></td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                        </tr>
+                        <tr>
+                            <td><input type = "checkbox" class = "chkbox"/></td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                        </tr>
+                        <tr>
+                            <td><input type = "checkbox" class = "chkbox"/></td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                        </tr>
+                        <tr>
+                            <td><input type = "checkbox" class = "chkbox"/></td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                        </tr>
+                        <tr>
+                            <td><input type = "checkbox" class = "chkbox"/></td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                        </tr>
+                        <tr>
+                            <td><input type = "checkbox" class = "chkbox"/></td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                        </tr>
+                        <tr>
+                            <td><input type = "checkbox" class = "chkbox"/></td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                        </tr>
+                        <tr>
+                            <td><input type = "checkbox" class = "chkbox"/></td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                        </tr>
+                        <tr>
+                            <td><input type = "checkbox" class = "chkbox"/></td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                        </tr>
+                        <tr>
+                            <td><input type = "checkbox" class = "chkbox"/></td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                        </tr>
+                        <tr>
+                            <td><input type = "checkbox" class = "chkbox"/></td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                        </tr>
+                        <tr>
+                            <td><input type = "checkbox" class = "chkbox"/></td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                        </tr>
+                        <tr>
+                            <td><input type = "checkbox" class = "chkbox"/></td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                        </tr>
+                        <tr>
+                            <td><input type = "checkbox" class = "chkbox"/></td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                        </tr>
+                        <tr>
+                            <td><input type = "checkbox" class = "chkbox"/></td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                        </tr>
+                        <tr>
+                            <td><input type = "checkbox" class = "chkbox"/></td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                        </tr>
+                        <tr>
+                            <td><input type = "checkbox" class = "chkbox"/></td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                        </tr>
+                        <tr>
+                            <td><input type = "checkbox" class = "chkbox"/></td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                            <td>123456</td>
+                        </tr>
+    
+    
+                </table>
+            </main>
+        </div>
+    </body>
+</html>
+
+
